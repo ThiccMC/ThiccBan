@@ -1,0 +1,93 @@
+#p-search-inp:focus, #p-search-inp-list:focus, #p-search-inp-indx:focus {
+  outline-color: var(--bs-cyan);
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+#p-search-inp-indx {
+  border-radius: 4px 4px 0px 0px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  #p-search-inp-indx {
+    width: 438px;
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+
+#p-search-sub-indx {
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media (min-width: 576px) {
+  #p-search-sub-indx {
+    width: 50px;
+    border-radius: 0px 4px 4px 0px;
+  }
+}
+
+#p-search-inp-list {
+  border-radius: 4px 4px 0px 0px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #p-search-inp-list {
+    width: 718px;
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+
+#p-search-sub-list {
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media (min-width: 768px) {
+  #p-search-sub-list {
+    width: 50px;
+    border-radius: 0px 4px 4px 0px;
+  }
+}
+
+.punish-stats-text {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .punish-stats-text {
+    display: inline;
+  }
+}
+
+.punish-stats-count {
+  padding: 1px 2px 1px 2px;
+  border-radius: 4px;
+}
+
+.punish-info-text {
+  color: var(--bs-gray-600);
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  #punish-info-col-skin {
+    height: 150px;
+  }
+}
+
+.punish-status-tag {
+  color: #fff;
+  margin-left: 5px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  #punish-info-player-skin {
+    display: none;
+  }
+}
+
