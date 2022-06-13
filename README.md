@@ -1,5 +1,6 @@
 # ThiccBan-Legacy
-ThiccMC Ban List, a fork of Litebans-PHP
+ThiccMC Ban List, a fork of Litebans-PHP. For more information, check out the [**Litebans-PHP wiki**](https://gitlab.com/ruany/LiteBans/-/wikis/home)
+
 This is the legacy branch and will no longer be supported.
 
 **WARNING**: This page is customized only for ThiccMC Network. You are free to use it but use at your own risk!
