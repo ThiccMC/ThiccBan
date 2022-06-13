@@ -9,11 +9,11 @@ npm i --s
 npm run dev
 ```
 
-###Build
+### Build
 ```
 npm run build
 npm start
 ```
 
-###Requirements
+### Requirements
 - Pre-setup MySQL Litebans Database
