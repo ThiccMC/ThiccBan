@@ -1,19 +1,11 @@
-# ThiccBan-Next
-ThiccMC Ban List. Using Next.js based on the default LiteBans page.
+# ThiccBan-Legacy
+ThiccMC Ban List, a fork of Litebans-PHP
+This is the legacy branch and will no longer be supported.
 
-**WARNING**: This page is customized only for ThiccMC Network, which uses ThiccMC's custom skin API. You are free to use it but use at your own risk!
+**WARNING**: This page is customized only for ThiccMC Network. You are free to use it but use at your own risk!
 
-### Development
-```
-npm i --s
-npm run dev
-```
-
-### Build
-```
-npm run build
-npm start
-```
+### Run
+- Use the files in the repo with a webserver (with PHP support) such as Apache or Nginx.
 
 ### Requirements
 - Pre-setup MySQL Litebans Database

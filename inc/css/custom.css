@@ -1,0 +1,204 @@
+.avatar {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.avatar-name {
+}
+
+.avatar-name-left {
+    display: flex;
+}
+
+/* header */
+.litebans-header {
+    display: block;
+    text-align: center;
+}
+
+.col-lg-12 {
+    text-align: center;
+}
+
+/* navbar */
+.navbar {
+    position: static;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-weight: normal;
+}
+
+.navbar-active {
+    font-weight: bolder;
+}
+
+.my-lg-0 {
+    font-weight: lighter;
+}
+
+/* tables */
+th {
+    text-align: center;
+}
+
+table tr td {
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+p {
+    margin-top: 2px;
+}
+
+/* table links */
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+tr.hover {
+    cursor: pointer;
+}
+
+/* check form */
+.litebans-check {
+    text-align: left;
+}
+
+.litebans-check-form {
+    margin-left: 15px;
+}
+
+.litebans-check-output {
+    margin-left: 3px;
+}
+
+/* pager */
+.litebans-pager {
+    font-size: 30px;
+}
+
+.litebans-pager-number {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.litebans-pager-left {
+    float: left;
+}
+
+.litebans-pager-right {
+    float: right;
+}
+
+.litebans-pager-active {
+    color: darkcyan;
+}
+
+.litebans-pager-inactive {
+    visibility: hidden;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* index.php */
+.litebans-index {
+    text-align: center;
+}
+
+.litebans-index-main {
+    font-weight: bold;
+}
+
+.litebans-index-sub {
+    font-weight: lighter;
+}
+
+/* info.php */
+.badge, .badge-pill {
+    font-weight: 100;
+}
+
+.litebans-label-container {
+    display: inline-flex;
+}
+
+.litebans-label-info {
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.litebans-label-inactive {
+    color: #fff;
+    background-color: #f79720;
+}
+
+.litebans-label-expired {
+    color: #fff;
+    background-color: #777;
+}
+
+.litebans-label-active {
+    color: #fff;
+    background-color: #ee5555;
+}
+
+.litebans-label-permanent {
+    color: #fff;
+    background-color: #ee5555;
+}
+
+.litebans-label-ipban {
+    color: #fff;
+    background-color: #ee5555;
+}
+
+/* history.php */
+.litebans-label-history {
+    display: inline;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.litebans-label-ban {
+    background-color: darkred;
+}
+
+.litebans-label-mute {
+    background-color: dimgrey;
+}
+
+.litebans-label-warn {
+    background-color: darkorange;
+}
+
+.litebans-label-kick {
+    background-color: tomato;
+}
+
+/* prevent mouse selection */
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* prevent alignment */
+.noalign-w {
+    width: 0;
+}
+
+.noalign-h {
+    height: 0;
+}
