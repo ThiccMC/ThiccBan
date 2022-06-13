@@ -1,7 +1,7 @@
 # ThiccBan-Next
 ThiccMC Ban List. Using Next.js based on default Litebans' page.
 
-**WARNING**: This page is customized only for ThiccMC Network. You are free to use it but use at your own risk!
+**WARNING**: This page is customized only for ThiccMC Network, which uses ThiccMC's custom skin API. You are free to use it but use at your own risk!
 
 ### Development
 ```
