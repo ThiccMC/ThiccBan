@@ -40,7 +40,7 @@ export default function ListMutes({ data, pC, pT }) {
     return (
     <div>
       <Head>
-        <title>Mutes | ThiccMC</title>
+        <title>Warns | ThiccMC</title>
       </Head>
       <main>
         <Navbar></Navbar>
