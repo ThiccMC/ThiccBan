@@ -62,8 +62,8 @@ export default function ListKicks({ data, pC, pT }) {
                   <tbody>
                     {
                       data.map((a)=>{
-                        var tA = `https://skin.qtpc.tech/resources/server/skinRender.php?vr=0&hr=0&headOnly=true&user=${a.uuid}`;
-                        var eA = a.banned_by_uuid == "CONSOLE" || a.banned_by_uuid == "[CONSOLE]" ? "/console.png" : `https://skin.qtpc.tech/resources/server/skinRender.php?vr=0&hr=0&headOnly=true&user=${a.banned_by_name}`;
+                        var tA = `https://skin.thiccmc.com/resources/server/skinRender.php?vr=0&hr=0&headOnly=true&user=${a.uuid}`;
+                        var eA = a.banned_by_uuid == "CONSOLE" || a.banned_by_uuid == "[CONSOLE]" ? "/console.png" : `https://skin.thiccmc.com/resources/server/skinRender.php?vr=0&hr=0&headOnly=true&user=${a.banned_by_name}`;
                         return (
                           <Link key={"id-" + a.id} href={`/info/kick-${a.id}`}>
                           <tr key={"id-" + a.id} style={{cursor: 'pointer'}}>

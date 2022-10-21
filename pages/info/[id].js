@@ -92,7 +92,7 @@ export default function List({ statusCode, type, data, typeColor }) {
                 <div className="card-body text-center">
                   <h6 className="text-center text-muted card-subtitle" style={{marginTop: '0px'}}>{type} for player:</h6>
                   <h4 className="text-center card-title" style={{fontFamily: 'Segoe UI', marginBottom: '0px'}}>{data.uuid}</h4>
-                  <div id="punish-info-player-skin" style={{marginTop: '20px'}}><img src={`https://skin.qtpc.tech/resources/server/skinRender?format=png&user=${data.uuid}`} height={320} /></div>
+                  <div id="punish-info-player-skin" style={{marginTop: '20px'}}><img src={`https://skin.thiccmc.com/resources/server/skinRender?format=png&user=${data.uuid}`} height={320} /></div>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function List({ statusCode, type, data, typeColor }) {
                 <div className="card-body">
                   <div style={{padding: '5px', marginBottom: '20px'}}><span className="punish-status-tag" style={{background: typeColor}}>{data.ipban == 1 ? 'IP ' + type : type}</span><span className="punish-status-tag" style={{background: data.active == 1 ? 'var(--bs-red)' : 'var(--bs-success)', display: type == "Ban" || type == "Mute" ? 'inline': 'none'}}>{data.active == 1 ? 'Active' : 'Inactive'}</span></div>
                   <p className="text-start" style={{marginBottom: '5px'}}><span className="punish-info-text">ID:</span>&nbsp; #{data.id}</p>
-                  <p className="text-start" style={{marginBottom: '5px'}}><span className="punish-info-text">Moderator:</span>&nbsp;&nbsp;<img src={data.banned_by_uuid == "CONSOLE" || data.banned_by_uuid == "[CONSOLE]" ? "/console.png" : "https://skin.qtpc.tech/resources/server/skinRender.php?vr=0&hr=0&headOnly=true&user=" + data.banned_by_name} width={25} style={{borderRadius: '4px'}} />&nbsp;{data.banned_by_uuid == "CONSOLE" || data.banned_by_uuid == "[CONSOLE]" ? "Console" : data.banned_by_name}</p>
+                  <p className="text-start" style={{marginBottom: '5px'}}><span className="punish-info-text">Moderator:</span>&nbsp;&nbsp;<img src={data.banned_by_uuid == "CONSOLE" || data.banned_by_uuid == "[CONSOLE]" ? "/console.png" : "https://skin.thiccmc.com/resources/server/skinRender.php?vr=0&hr=0&headOnly=true&user=" + data.banned_by_name} width={25} style={{borderRadius: '4px'}} />&nbsp;{data.banned_by_uuid == "CONSOLE" || data.banned_by_uuid == "[CONSOLE]" ? "Console" : data.banned_by_name}</p>
                   <p className="text-start mb-0"><span className="punish-info-text">Reason:</span><br />{data.reason}<br /></p>
                   <p className="text-start mb-0"><span className="punish-info-text">Date:</span>&nbsp;{DateTime.fromMillis(data.time).toFormat('MM-dd-yyyy , hh:mm:ss')}<br /></p>
                   <p className="text-start mb-0"><span className="punish-info-text">Expires:</span>&nbsp;{DateTime.fromMillis(data.until).toFormat('MM-dd-yyyy , hh:mm:ss')}<br /></p>

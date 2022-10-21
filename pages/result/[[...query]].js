@@ -102,7 +102,7 @@ export default function Result({ statusCode, data, pname, pC, pT, rRoute }) {
                     <div className="card-body text-center">
                       <h6 className="text-center text-muted card-subtitle" style={{marginTop: '0px'}}>Punishments for player:</h6>
                       <h4 className="text-center card-title" style={{fontFamily: 'Segoe UI', marginBottom: '0px'}}>{pname}</h4>
-                      <div id="punish-info-player-skin" style={{marginTop: '20px'}}><img src={"https://skin.qtpc.tech/resources/server/skinRender?format=png&user=" + pname} height={320} /></div>
+                      <div id="punish-info-player-skin" style={{marginTop: '20px'}}><img src={"https://skin.thiccmc.com/resources/server/skinRender?format=png&user=" + pname} height={320} /></div>
                     </div>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export default function Result({ statusCode, data, pname, pC, pT, rRoute }) {
                 <div className="card-body text-center">
                   <h6 className="text-center text-muted card-subtitle" style={{marginTop: '0px'}}>Punishments for player:</h6>
                   <h4 className="text-center card-title" style={{fontFamily: 'Segoe UI', marginBottom: '0px'}}>{pname}</h4>
-                  <div id="punish-info-player-skin" style={{marginTop: '20px'}}><img src={"https://skin.qtpc.tech/resources/server/skinRender?format=png&user=" + pname} height={320} /></div>
+                  <div id="punish-info-player-skin" style={{marginTop: '20px'}}><img src={"https://skin.thiccmc.com/resources/server/skinRender?format=png&user=" + pname} height={320} /></div>
                 </div>
               </div>
             </div>
