@@ -97,7 +97,7 @@ export default function List({ statusCode, type, data, typeColor }) {
               </div>
             </div>
             <div className="col-md-8" style={{paddingRight: '0px', paddingLeft: '0px'}}>
-              <div className="card" style={{maxWidth: '520px', margin: '0 auto', borderWidth: '0px', borderRadius: '0px', height: '100%'}} overflow-y="hidden">
+              <div className="card" style={{maxWidth: '520px', margin: '0 auto', borderWidth: '0px', borderRadius: '0px', height: '100%', overflowY: 'hidden'}}>
                 <div className="card-body">
                   <div style={{padding: '5px', marginBottom: '20px'}}><span className="punish-status-tag" style={{background: typeColor}}>{data.ipban == 1 ? 'IP ' + type : type}</span><span className="punish-status-tag" style={{background: data.active == 1 ? 'var(--bs-red)' : 'var(--bs-success)', display: type == "Ban" || type == "Mute" ? 'inline': 'none'}}>{data.active == 1 ? 'Active' : 'Inactive'}</span></div>
                   <p className="text-start" style={{marginBottom: '5px'}}><span className="punish-info-text">ID:</span>&nbsp; #{data.id}</p>

@@ -107,7 +107,7 @@ export default function Result({ statusCode, data, pname, pC, pT, rRoute }) {
                   </div>
                 </div>
                 <div className="col-md-8" style={{paddingRight: '0px', paddingLeft: '0px'}}>
-                  <div className="card" style={{maxWidth: '520px', margin: '0 auto', borderWidth: '0px', borderRadius: '0px', height: '420px'}} overflow-y="hidden">
+                  <div className="card" style={{maxWidth: '520px', margin: '0 auto', borderWidth: '0px', borderRadius: '0px', height: '420px', overflowY: "hidden"}}>
                     <div className="card-body text-center" style={{marginTop: '20px'}}>
                       <h5 className="text-muted">This player does not have any recent punishments.</h5>
                     </div>
@@ -141,7 +141,7 @@ export default function Result({ statusCode, data, pname, pC, pT, rRoute }) {
               </div>
             </div>
             <div className="col-md-8" style={{paddingRight: '0px', paddingLeft: '0px'}}>
-              <div className="card" style={{maxWidth: '520px', margin: '0 auto', borderWidth: '0px', borderRadius: '0px', height: '420px'}} overflow-y="hidden">
+              <div className="card" style={{maxWidth: '520px', margin: '0 auto', borderWidth: '0px', borderRadius: '0px', height: '420px', overflowY: "hidden"}}>
                 <div className="card-body text-center">
                   {
                     data.map((a)=>{
