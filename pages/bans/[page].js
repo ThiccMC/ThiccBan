@@ -69,7 +69,7 @@ export default function ListBans({ data, pC, pT }) {
                           <tr key={"id-" + a.id} style={{cursor: 'pointer'}}>
                             <td><img width={25} src={tA} />&nbsp;{a.uuid}</td>
                             <td><img width={25} src={eA} />&nbsp;{a.banned_by_name}</td>
-                            <td>{a.reason}</td>
+                            <td>{a.reason.replace(/\u00A7[0-9A-FK-OR]/ig, "")}</td>
                           </tr>
                           </Link>
                         )
