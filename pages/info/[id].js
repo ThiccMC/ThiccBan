@@ -104,7 +104,7 @@ export default function List({ statusCode, type, data, typeColor }) {
                   <p className="text-start" style={{marginBottom: '5px'}}><span className="punish-info-text">Moderator:</span>&nbsp;&nbsp;<img src={data.banned_by_uuid == "CONSOLE" || data.banned_by_uuid == "[CONSOLE]" ? "/console.png" : "https://skin.thiccmc.com/resources/server/skinRender.php?vr=0&hr=0&headOnly=true&user=" + data.banned_by_name} width={25} style={{borderRadius: '4px'}} />&nbsp;{data.banned_by_uuid == "CONSOLE" || data.banned_by_uuid == "[CONSOLE]" ? "Console" : data.banned_by_name}</p>
                   <p className="text-start mb-0"><span className="punish-info-text">Reason:</span><br />{data.reason.replace(/\u00A7[0-9A-FK-OR]/ig, "")}<br /></p>
                   <p className="text-start mb-0"><span className="punish-info-text">Date:</span>&nbsp;{DateTime.fromMillis(data.time).toFormat('MM-dd-yyyy , hh:mm:ss')}<br /></p>
-                  <p className="text-start mb-0"><span className="punish-info-text">Expires:</span>&nbsp;{DateTime.fromMillis(data.until).toFormat('MM-dd-yyyy , hh:mm:ss')}<br /></p>
+                  <p className="text-start mb-0"><span className="punish-info-text">Expires:</span>&nbsp;{data.until == 0 ? "Pernament" : DateTime.fromMillis(data.until).toFormat('MM-dd-yyyy , hh:mm:ss')}<br /></p>
                   <p className="text-start mb-0"><span className="punish-info-text">Server:</span>&nbsp;{data.server_origin}<br /></p>
                   <p className="text-start mb-0" style={{ display: type == "Warn" || data.removed_by_name != null && data.removed_by_name != '#expire' ? 'block' : 'none'}}><span className="punish-info-text">Unban Reason:</span><br />{data.removed_by_reason}<br /></p>
                 </div>
