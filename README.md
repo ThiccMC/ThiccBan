@@ -1,19 +1,41 @@
-# ThiccBan-Next
-ThiccMC Ban List. Using Next.js based on the default LiteBans page.
+# ThiccBan
+An alternative website for [LiteBans Web](https://www.spigotmc.org/resources/litebans.3715). Customized for use at [ThiccMC Network](https://thiccmc.com).
 
-**WARNING**: This page is customized only for ThiccMC Network, which uses ThiccMC's custom skin API. You are free to use it but use at your own risk!
+### Features
+[x] Next.JS (with Typescript)
+[x] Faster load time
+[x] Custom Skin API (SkinRestorer)
+[ ] Localization
 
-### Development
+### Setting up and running
 ```
-npm i --s
+npm i --save
+cp .env.example .env
 npm run dev
 ```
+**Don't forget** to edit your database credentials in .env.
+The server will run on **localhost:3000**
 
-### Build
+### Production
 ```
+npm run lint
 npm run build
 npm start
 ```
 
-### Requirements
-- Pre-setup MySQL Litebans Database
+### Contribute
+To contribute to this project:
+1. Clone this repository
+2. Make your changes
+3. Make a pull request
+
+### Frameworks
+- Next.JS v13
+- Bootstrap 5
+- MySQL 8 / MariaDB 10
+
+### Found a bug?
+If you found a bug, please consider open an **Issue** and we will get right into it.
+
+### Support
+If you want to support, please consider starring this repository. Thank you <3

@@ -1,0 +1,208 @@
+body {
+  background-color: rgb(39,38,46) !important;
+  font-family: 'Quicksand' !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.main {
+  min-height: calc(100vh - 37px);
+}
+
+@media (max-width: 767px) {
+  .main {
+    min-height: calc(100vh - 58px);
+  }
+}
+
+.content {
+  padding: 4px 12px;
+}
+
+.centered {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  text-align: center;
+}
+
+.card.center {
+  margin: 20px auto 20px;
+}
+
+.card-body {
+  background-color: rgb(45,44,56);
+  border-radius: 10px;
+}
+
+.stats {
+  color: var(--bs-gray-500);
+  padding: 4px 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(35,34,44);
+  margin: 2px;
+  transition-duration: 300ms;
+}
+
+.stats:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.stats .number {
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.stats .number.bans {
+  background-color: var(--bs-red);
+}
+
+.stats .number.mutes {
+  background-color: var(--bs-purple);
+}
+
+.stats .number.kicks {
+  background-color: var(--bs-green);
+}
+
+.stats .number.warns {
+  background-color: var(--bs-yellow);
+}
+
+.stats .number.active {
+  background-color: #d71400;
+}
+
+.stats .number.expired {
+  background-color: var(--bs-cyan);
+}
+
+.footer {
+  background-color: rgb(28,27,33);
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.footer .col-l {
+  text-align: left;
+}
+
+.footer .col-r {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .footer .col-l, .footer .col-r {
+    text-align: center;
+  }
+}
+
+.footer .col-r li {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.accordion-item {
+  border: none;
+  background-color: rgb(35,34,44);
+}
+
+.accordion-button {
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgb(29,29,39);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.status {
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.status.active {
+  background-color: var(--bs-red);
+}
+
+.status.inactive {
+  background-color: var(--bs-teal);
+}
+
+.p-list .list-group-item {
+  background-color: rgb(35,34,44);
+  border: solid 1px rgb(28,27,35);
+  padding: 12px 16px;
+}
+
+.p-list .list-group-item:hover {
+  background-color: rgba(35,34,44,0.7);
+  cursor: pointer;
+}
+
+.i-table td {
+  padding: 4px;
+}
+
+.p-table tr {
+  cursor: pointer;
+}
+
+.p-table td:nth-child(1), .p-table td:nth-child(2) {
+  font-family: 'Minecraft';
+}
+
+.avatar {
+  border-radius: 4px;
+  height: 25px;
+  width: 25px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: var(--bs-cyan) transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
