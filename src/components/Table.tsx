@@ -100,7 +100,7 @@ export function InfoTable({ type, data }: { type: any, data: any }) {
                         { type == "Ban" || type == "Mute" ?
                         <tr>
                             <td className="text-end text-muted">Expire</td>
-                            <td>{ data.until == 0 && data.active == 1 ? "Permanent" : Date.now() > data.until ? "Expired" : DateTime.fromMillis(data.until).toFormat('MM/dd/yyyy hh:mm:ss')}</td>
+                            <td>{ data.until == 0 && Buffer.from(data.active, 'utf8').readInt8() ? "Permanent" : Date.now() > data.until ? "Expired" : DateTime.fromMillis(data.until).toFormat('MM/dd/yyyy hh:mm:ss')}</td>
                         </tr> : undefined
                         }
                         <tr>

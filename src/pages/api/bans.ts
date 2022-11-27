@@ -53,5 +53,6 @@ async function getInfo(id: number) {
     })
 
     if (!_sql_data[0]) return { data: null }
+    _sql_data[0].until == -1 ? _sql_data[0].until = 0 : undefined
     return { data: _sql_data[0] }
 }
