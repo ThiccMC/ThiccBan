@@ -2,10 +2,10 @@
 An alternative website for [LiteBans Web](https://www.spigotmc.org/resources/litebans.3715). Customized for use at [ThiccMC Network](https://thiccmc.com).
 
 ### Features
-[x] Next.JS (with Typescript)
-[x] Faster load time
-[x] Custom Skin API (SkinRestorer)
-[ ] Localization
+- [x] Next.JS (with Typescript)
+- [x] Faster load time
+- [x] Custom Skin API (SkinRestorer)
+- [ ] Localization
 
 ### Setting up and running
 ```
