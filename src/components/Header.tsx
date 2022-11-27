@@ -6,9 +6,9 @@ import { FormEvent } from 'react'
 export default function Header() {
   const router = useRouter()
 
-  const searchPlayer = async (event: FormEvent) => {
+  const searchPlayer = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const query = event.target.search.value
+    const query = event.currentTarget.search.value
     router.push(`/players/${query}`);
   }
 

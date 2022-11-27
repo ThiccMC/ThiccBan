@@ -11,7 +11,6 @@ export default function Document() {
       </body>
       <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"/>
       <Script src="/js/bootstrap.min.js" />
-      <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" />
     </Html>
   )
 }

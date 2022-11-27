@@ -44,8 +44,8 @@ export default function Ban({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </div>
       <Footer />
-      <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" />
-      <Script id="particles-loader" strategy="lazyOnload" dangerouslySetInnerHTML={{__html: "particlesJS.load('particles', '/particles/config.json', function() {console.log('callback - particles.js config loaded')})"}}/>
+      <Script strategy="beforeInteractive" src="/js/particles.min.js" />
+      <Script id="particles-loader" dangerouslySetInnerHTML={{__html: "particlesJS.load('particles', '/particles/config.json', function() {console.log('callback - particles.js config loaded')})"}}/>
     </>
   )
 }
